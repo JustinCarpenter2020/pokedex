@@ -17,16 +17,16 @@ export default class Pokemon{
             <h4 class="card-title">${this.name} The ${this.types.join(", ")} Type Pokemon:</h4>
             <p class="card-text">${this.description}</p>
             <p class="card-text">Height:${this.height} | Weight:${this.weight}
-        </div>
+            </div>
+            ${this.Button}
     </div>
-    ${this.Button}
     
     `
   }
   get Button(){
     if(this.id){
-      return  `<button class="btn btn-outline-success" onclick="app.mySpellController.addSpell()">Mark As Captured</button>`
+      return  `<button class="btn btn-outline-success" onclick="app.myPokemonController.addPokemon()">Mark As Captured</button>`
     }
-    return `<button class="btn btn-outline-danger" onclick="app.mySpellController.removeSpell()">Rele</button>`
+    return `<button class="btn btn-outline-danger" onclick="app.myPokemonController.removePokemon()">Release</button>`
   }
 }
