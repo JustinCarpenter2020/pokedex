@@ -1,7 +1,8 @@
-import ValuesController from "./Controllers/ValuesController.js";
-
+import FreePokemonController from "./Controllers/FreePokemonController.js";
+import MyPokemonController from "./Controllers/FreePokemonController.js"
 class App {
-  valuesController = new ValuesController();
+  freePokemonController = new FreePokemonController();
+  myPokemonController = new MyPokemonController();
 }
 
 window["app"] = new App();
