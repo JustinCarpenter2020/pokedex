@@ -10695,4 +10695,42 @@ main {
   flex-grow: 1;
 }
 
+.free{
+  width: 40em;
+  height: 20em;
+  margin-top: 4em;
+}
+
+.background{
+background-color: #BF0F0F;
+}
+
+.light{
+  background-color: #A0F266;
+}
+
+.dark{
+  background-color: #44E01D;
+}
+
+.circle{
+  background-color: #9DEAF6;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.pic{
+  width: 50%;
+  margin-right: 25px;
+  height: 100%;
+  margin-left: 25px;
+}
+
+.silver{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
 /*# sourceMappingURL=main.css.map */

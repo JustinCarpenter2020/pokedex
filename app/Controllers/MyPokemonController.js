@@ -4,7 +4,7 @@ import { myPokemonService } from "../Services/MyPokemonService.js";
 function _drawPokemon(){
   let template = ''
   ProxyState.myPokemon.forEach(pokemon => {
-    template += `<ul class="action" onclick="app.mySPokemonController.getPokemon('${pokemon.id}')">${pokemon.name}</ul>`
+    template += `<ul class="action" onclick="app.myPokemonController.getPokemon('${pokemon.id}')">${pokemon.name}</ul>`
   })
   document.getElementById('my-pokemon').innerHTML = template
 }
@@ -24,8 +24,8 @@ getAllPokemon(){
     console.error(error)
   }
 }
-getPokemon(id){
-  myPokemonService.getAllPokemon(id)
+getPokemon(){
+  myPokemonService.getAllPokemon()
 }
 
 addPokemon(){
@@ -43,6 +43,4 @@ removePokemon(){
     console.error(error)
   }
 }
-
-
 }

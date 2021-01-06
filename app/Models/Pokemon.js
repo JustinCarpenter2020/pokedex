@@ -1,5 +1,5 @@
 export default class Pokemon{
-  constructor({name, img, description, weight, height, types, id }){
+  constructor({name, img, description, weight, height, types, id}){
   this.name = name
   this.height = height
   this.id = id
@@ -13,9 +13,9 @@ export default class Pokemon{
   get Template(){
     return `
     <div class="card">
-        <div class="card-body">
+        <div class="card-body silver">
             <h4 class="card-title">${this.name} The ${this.types.join(", ")} Type Pokemon:</h4>
-            <p class="card-text">${this.description}</p>
+            <p class="card-text">${this.img}</p>
             <p class="card-text">Height:${this.height} | Weight:${this.weight}
             </div>
             ${this.Button}
